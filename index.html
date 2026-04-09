@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="flex">
+    <div class="card flex">
+      <div class="top">
+        <div class="search-bar">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Enter city name"
+          />
+        </div>
+        <div class="search-icon flex">
+          <img src="./assets/images/search.png" alt="Search Icon" />
+        </div>
+      </div>
+      <div class="error remove">
+        <div class="error-search-icon">
+          <img src="./assets/images/search.png" alt="Search Icon" />
+        </div>
+        <p class="text-error-heading">No Results</p>
+        <p class="text-error-subheading"></p>
+      </div>
+      <div class="mid">
+        <div class="weather-icon">
+          <img src="./assets/images/drizzle.png" alt="Weather Icon" />
+        </div>
+        <div class="temperature flex">
+          <p>22°<span class="temp-unit">C</span></p>
+          <button class="temp-unit-button">F</button>
+        </div>
+        <div class="city">
+          <p></p>
+        </div>
+      </div>
+      <div class="bottom flex">
+        <div class="humidity flex">
+          <div class="icon">
+            <img src="./assets/images/humidity.png" alt="Humidity Icon" />
+          </div>
+          <div class="detail">
+            <p class="measure humid"></p>
+            <p class="text">Humidity</p>
+          </div>
+        </div>
+        <div class="wind-speed flex">
+          <div class="icon">
+            <img src="./assets/images/wind.png" alt="Wind Icon" />
+          </div>
+          <div class="detail">
+            <p class="measure windy"></p>
+            <p class="text">Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
