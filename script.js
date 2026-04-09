@@ -1,5 +1,5 @@
 let defaultCity = "London";
-const API_KEY = "7ef10de6b8bc4bcdb1b60901260804";
+const API_KEY = "YOUR_API_KEY";
 
 const elements = {
   search: document.querySelector("#search"),
